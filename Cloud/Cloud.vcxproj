@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{53796575-E52F-4AC3-AB62-015879A7B10F}</ProjectGuid>
     <RootNamespace>Cloud</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -123,11 +123,13 @@
   <ItemGroup>
     <ClCompile Include="classDemo.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\STLDemo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="classDemo.h" />
     <ClInclude Include="ClassDefTest.h" />
     <ClInclude Include="MemberInitTest.h" />
+    <ClInclude Include="src\STLDemo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
