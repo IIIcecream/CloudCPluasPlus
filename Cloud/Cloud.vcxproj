@@ -15,11 +15,15 @@
     <ClInclude Include="classDemo.h" />
     <ClInclude Include="MemberInitTest.h" />
     <ClInclude Include="STLDemo.h" />
+    <ClInclude Include="STL\ListDemo.h" />
+    <ClInclude Include="STL\VectorDemo.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="classDemo.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="STLDemo.cpp" />
+    <ClCompile Include="STL\ListDemo.cpp" />
+    <ClCompile Include="STL\VectorDemo.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{28D9C2D9-67C0-435C-86C2-E81AB8A88A62}</ProjectGuid>

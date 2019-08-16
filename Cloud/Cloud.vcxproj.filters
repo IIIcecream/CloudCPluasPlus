@@ -23,6 +23,12 @@
       <Extensions>moc;h;cpp</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Header Files\STL">
+      <UniqueIdentifier>{e228841d-41b3-4492-b75d-df604816c481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\STL">
+      <UniqueIdentifier>{795e233b-6346-4716-a6dc-0356ade259c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClassDefTest.h">
@@ -37,6 +43,12 @@
     <ClInclude Include="STLDemo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="STL\VectorDemo.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="STL\ListDemo.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="classDemo.cpp">
@@ -47,6 +59,12 @@
     </ClCompile>
     <ClCompile Include="STLDemo.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="STL\VectorDemo.cpp">
+      <Filter>Source Files\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="STL\ListDemo.cpp">
+      <Filter>Source Files\STL</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
