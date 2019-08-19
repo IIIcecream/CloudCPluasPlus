@@ -9,24 +9,29 @@
 using std::list;
 
 // 单链表节点
-struct ListNode1
+struct SingleListNode
 {
+    SingleListNode(int n) : val(n), next(nullptr) {}
+
     int val;
-    ListNode1* next;
+    SingleListNode* next;
 };
 
 // 双链表节点
-struct ListNode2
+struct DoubleListNode
 {
+    DoubleListNode(int n) : val(n), prev(nullptr), next(nullptr) {}
+
     int val;
-    ListNode2* prev;
-    ListNode2* next;
+    DoubleListNode* prev;
+    DoubleListNode* next;
 };
 
 class ListDemo
 {
 public:
     void demo();
+    void myListDemo();
 
 private:
     list<int> m_nums;

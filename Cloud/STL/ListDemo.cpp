@@ -59,3 +59,38 @@ void ListDemo::demo()
     sort(m_nums.begin(), m_nums.end());
 }
 
+/*!
+*@brief        链表
+*@author       tangw  2019/08/19  17:18
+*/
+void ListDemo::myListDemo()
+{
+    // 单链表
+    SingleListNode *pSingleHead = nullptr;
+    int n = 5;
+    SingleListNode *p = pSingleHead;
+    while (n--)
+    {
+        SingleListNode* pNewNode = new SingleListNode(n);
+        if (p) p->next = pNewNode;
+        
+        p = pNewNode;
+    }
+    // 环形链表
+    p->next = pSingleHead;
+
+    // 双链表
+    DoubleListNode *pDoubleHead = nullptr;
+    int n = 5;
+    DoubleListNode *pPrev = pDoubleHead;
+    DoubleListNode *pCur = pDoubleHead;
+    while (n--)
+    {
+        DoubleListNode *pNewNode = new DoubleListNode(n);
+        if (pCur) pCur->next = pNewNode;
+
+        pPrev = pCur;
+        pCur = pNewNode;
+    }
+}
+
