@@ -24,6 +24,8 @@ public:
     // 将结果转成string
     string transResultToString();
 
+    // 将string解析成结果
+    void transStringToResult(string sResult);
 private:
     vector<MatchResultItem> matchResults;
 };

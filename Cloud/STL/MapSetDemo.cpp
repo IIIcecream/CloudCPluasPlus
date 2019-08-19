@@ -19,7 +19,7 @@ void MapSetDemo::mapDemo()
 
     // 判断key是否存在
     bool bExist = myMap.find(1) == myMap.end();
-    bool bExist = myMap.count(1) > 0;
+    bExist = myMap.count(1) > 0;
 
     // 获取元素个数
     myMap.size();

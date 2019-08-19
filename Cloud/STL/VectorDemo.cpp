@@ -40,7 +40,7 @@ void VectorDemo::demo()
 
     // 判空，获取容器元素个数
     m_nums.empty();
-    m_nums.size() == 0;
+    bool b = m_nums.size() == 0;
 
     // 获取容器目前容量
     m_nums.capacity();
@@ -50,7 +50,7 @@ void VectorDemo::demo()
     m_nums.pop_back();
 
     // 排序
-    sort(m_nums.begin(), m_nums.end(), [](int left, int right)->bool
+    std::sort(m_nums.begin(), m_nums.end(), [](int left, int right)->bool
     {
         return left < right;
     });

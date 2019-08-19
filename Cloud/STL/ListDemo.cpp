@@ -40,7 +40,7 @@ void ListDemo::demo()
 
     // 判空，获取容器元素个数
     m_nums.empty();
-    m_nums.size() == 0;
+    bool b = m_nums.size() == 0;
 
     // list 没有容量
     // m_nums.capacity();
@@ -56,7 +56,6 @@ void ListDemo::demo()
     {
         return left < right;
     });
-    sort(m_nums.begin(), m_nums.end());
 }
 
 /*!
@@ -81,7 +80,7 @@ void ListDemo::myListDemo()
 
     // 双链表
     DoubleListNode *pDoubleHead = nullptr;
-    int n = 5;
+    n = 5;
     DoubleListNode *pPrev = pDoubleHead;
     DoubleListNode *pCur = pDoubleHead;
     while (n--)

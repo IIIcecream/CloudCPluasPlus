@@ -2,7 +2,7 @@
 
 void BinaryTree::demo()
 {
-    TreeNode *pRoot;
+    TreeNode *pRoot = nullptr;
 
     int arr[] = { 3, 5, 7, 2, 9, 6 };
     // 构造二叉查找树
