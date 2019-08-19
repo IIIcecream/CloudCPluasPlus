@@ -15,14 +15,24 @@
     <ClInclude Include="classDemo.h" />
     <ClInclude Include="MemberInitTest.h" />
     <ClInclude Include="STLDemo.h" />
+    <ClInclude Include="STL\BinaryTree.h" />
     <ClInclude Include="STL\ListDemo.h" />
+    <ClInclude Include="STL\MapSetDemo.h" />
+    <ClInclude Include="STL\QueueDemo.h" />
+    <ClInclude Include="STL\StackDemo.h" />
+    <ClInclude Include="STL\StringDemo.h" />
     <ClInclude Include="STL\VectorDemo.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="classDemo.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="STLDemo.cpp" />
+    <ClCompile Include="STL\BinaryTree.cpp" />
     <ClCompile Include="STL\ListDemo.cpp" />
+    <ClCompile Include="STL\MapSetDemo.cpp" />
+    <ClCompile Include="STL\QueueDemo.cpp" />
+    <ClCompile Include="STL\StackDemo.cpp" />
+    <ClCompile Include="STL\StringDemo.cpp" />
     <ClCompile Include="STL\VectorDemo.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

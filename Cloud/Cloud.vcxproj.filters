@@ -49,6 +49,21 @@
     <ClInclude Include="STL\ListDemo.h">
       <Filter>Header Files\STL</Filter>
     </ClInclude>
+    <ClInclude Include="STL\StackDemo.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="STL\QueueDemo.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="STL\BinaryTree.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="STL\MapSetDemo.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="STL\StringDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="classDemo.cpp">
@@ -65,6 +80,21 @@
     </ClCompile>
     <ClCompile Include="STL\ListDemo.cpp">
       <Filter>Source Files\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="STL\StackDemo.cpp">
+      <Filter>Source Files\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="STL\QueueDemo.cpp">
+      <Filter>Source Files\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="STL\BinaryTree.cpp">
+      <Filter>Source Files\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="STL\MapSetDemo.cpp">
+      <Filter>Source Files\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="STL\StringDemo.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
