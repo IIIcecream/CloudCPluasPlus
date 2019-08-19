@@ -11,13 +11,13 @@ std::string STLDemo::transResultToString()
         string sItem;
 
         // ÷˜…Û
-        for each(int nID in oItem.edoAs) sItem += (char)('0' + nID) + ',';
+        for each(int nID in oItem.edoAs) sItem += std::to_string((__int64)nID) + ',';
 
         if (sItem.back() == ',') sItem[sItem.length() - 1] = ':';
         else sItem.push_back(':');
 
         // ÀÕ…Û
-        for each(int nID in oItem.edoBs) sItem += (char)('0' + nID) + ',';
+        for each(int nID in oItem.edoBs) sItem += std::to_string((__int64)nID) + ',';
         
         if (sItem.back() == ',') sItem.pop_back();
 
@@ -56,16 +56,33 @@ vector<string> split(const string& str, const string& delim) {
 
 void STLDemo::transStringToResult(string sResult)
 {
-    vector<string> sList = split(sResult, ",");
+    vector<string> sList = split(sResult, "\"");
 
     for each(string const& sItem in sList)
     {
+        if (sItem == ",") continue;
+
         int nInex = sItem.find(':');
         if (nInex == -1) continue;
 
         string sLeft = sItem.substr(0, nInex);
         string sRight = sItem.substr(nInex + 1);
 
+        MatchResultItem oItem;
+        if (!sLeft.empty())
+        {
+            vector<string> sEdoAs = split(sLeft, ",");
+            for each(string const& edoID in sEdoAs)
+                oItem.edoAs.push_back(std::stoi(edoID));
+        }
+
+        if (!sRight.empty())
+        {
+            vector<string> sEdoBs = split(sRight, ",");
+            for each(string const& edoID in sEdoBs)
+                oItem.edoBs.push_back(std::stoi(edoID));
+        }
+        matchResults.push_back(oItem);
     }
 }
 
