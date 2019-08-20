@@ -3,6 +3,7 @@
 #include <stack>
 using std::stack;
 
+// http://www.cplusplus.com/reference/stack/stack/?kw=stack
 void StackDemo::demo()
 {
     stack<int> myStack;

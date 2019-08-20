@@ -5,6 +5,7 @@
 using std::map;
 using std::set;
 
+// http://www.cplusplus.com/reference/map/map/?kw=map
 void MapSetDemo::mapDemo()
 {
     map<int, int> myMap;
@@ -39,6 +40,7 @@ void MapSetDemo::mapDemo()
     myMap.erase(itr);
 }
 
+// http://www.cplusplus.com/reference/set/set/?kw=set
 void MapSetDemo::setDemo()
 {
     // ”Îmap¿‡À∆

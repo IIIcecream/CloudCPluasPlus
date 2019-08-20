@@ -3,6 +3,7 @@
 #include <queue>
 using std::queue;
 
+// http://www.cplusplus.com/reference/queue/queue/?kw=queue
 void QueueDemo::demo()
 {
     queue<int> myQueue;

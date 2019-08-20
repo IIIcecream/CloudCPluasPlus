@@ -1,6 +1,7 @@
 #include "VectorDemo.h"
 #include <algorithm>
 
+// http://www.cplusplus.com/reference/vector/vector/?kw=vector
 void VectorDemo::demo()
 {
     // add item
